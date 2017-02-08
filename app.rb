@@ -15,7 +15,7 @@ before(/^(?!\/status)/) do
 end
 
 get '/' do
-  "<h1 align='center'>This is an example app.</h1><br /><p>ENV['TOKEN']: #{ENV['TOKEN']}</p>"
+  erb :index
 end
 
 # TODO this should perform some sort of check to ensure the app is ready
